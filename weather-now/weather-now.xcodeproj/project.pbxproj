@@ -13,6 +13,19 @@
 		FA069449230EA2A000BAC336 /* weather_nowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069448230EA2A000BAC336 /* weather_nowTests.swift */; };
 		FA069454230EA2A000BAC336 /* weather_nowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069453230EA2A000BAC336 /* weather_nowUITests.swift */; };
 		FA069469230EAC6F00BAC336 /* WNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069468230EAC6F00BAC336 /* WNViewController.swift */; };
+		FA06946B230EAFC900BAC336 /* WNLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06946A230EAFC900BAC336 /* WNLocationProvider.swift */; };
+		FA06946D230EB01E00BAC336 /* WNPredictionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06946C230EB01E00BAC336 /* WNPredictionProvider.swift */; };
+		FA06946F230EB2BD00BAC336 /* HardwareLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06946E230EB2BD00BAC336 /* HardwareLocationService.swift */; };
+		FA069471230EE50900BAC336 /* WNVisuallyLockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069470230EE50900BAC336 /* WNVisuallyLockable.swift */; };
+		FA069474230F03AA00BAC336 /* DarkSkyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069473230F03AA00BAC336 /* DarkSkyWeather.swift */; };
+		FA069478230F054A00BAC336 /* DarkSkyPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069477230F054A00BAC336 /* DarkSkyPrediction.swift */; };
+		FA06947B230F081000BAC336 /* WNLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06947A230F081000BAC336 /* WNLocation.swift */; };
+		FAB1F53C2311B92700E26CD6 /* DarkSkyPredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F53B2311B92700E26CD6 /* DarkSkyPredictionService.swift */; };
+		FAB1F5432311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F5422311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift */; };
+		FAB1F5462311C12C00E26CD6 /* WNPredictionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F5452311C12C00E26CD6 /* WNPredictionModel.swift */; };
+		FAB1F5482311C38900E26CD6 /* WNPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F5472311C38900E26CD6 /* WNPrediction.swift */; };
+		FAB1F54D2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F54C2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift */; };
+		FAB1F54F2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F54E2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +58,19 @@
 		FA069453230EA2A000BAC336 /* weather_nowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_nowUITests.swift; sourceTree = "<group>"; };
 		FA069455230EA2A000BAC336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA069468230EAC6F00BAC336 /* WNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNViewController.swift; sourceTree = "<group>"; };
+		FA06946A230EAFC900BAC336 /* WNLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNLocationProvider.swift; sourceTree = "<group>"; };
+		FA06946C230EB01E00BAC336 /* WNPredictionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNPredictionProvider.swift; sourceTree = "<group>"; };
+		FA06946E230EB2BD00BAC336 /* HardwareLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareLocationService.swift; sourceTree = "<group>"; };
+		FA069470230EE50900BAC336 /* WNVisuallyLockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNVisuallyLockable.swift; sourceTree = "<group>"; };
+		FA069473230F03AA00BAC336 /* DarkSkyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyWeather.swift; sourceTree = "<group>"; };
+		FA069477230F054A00BAC336 /* DarkSkyPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyPrediction.swift; sourceTree = "<group>"; };
+		FA06947A230F081000BAC336 /* WNLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNLocation.swift; sourceTree = "<group>"; };
+		FAB1F53B2311B92700E26CD6 /* DarkSkyPredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyPredictionService.swift; sourceTree = "<group>"; };
+		FAB1F5422311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+WNLocation.swift"; sourceTree = "<group>"; };
+		FAB1F5452311C12C00E26CD6 /* WNPredictionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNPredictionModel.swift; sourceTree = "<group>"; };
+		FAB1F5472311C38900E26CD6 /* WNPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNPrediction.swift; sourceTree = "<group>"; };
+		FAB1F54C2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HardwareLocationService+WNLocationProvider.swift"; sourceTree = "<group>"; };
+		FAB1F54E2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DarkSkyPredictionService+WNPredictionProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +121,9 @@
 		FA069432230EA29F00BAC336 /* weather-now */ = {
 			isa = PBXGroup;
 			children = (
-				FA069464230EA64500BAC336 /* support */,
-				FA069462230EA62C00BAC336 /* api */,
-				FA069461230EA62300BAC336 /* ui */,
+				FA069464230EA64500BAC336 /* app */,
+				FAB1F5492311C69000E26CD6 /* conformance */,
+				FA069462230EA62C00BAC336 /* domains */,
 			);
 			path = "weather-now";
 			sourceTree = "<group>";
@@ -120,32 +146,72 @@
 			path = "weather-nowUITests";
 			sourceTree = "<group>";
 		};
-		FA069461230EA62300BAC336 /* ui */ = {
+		FA069462230EA62C00BAC336 /* domains */ = {
 			isa = PBXGroup;
 			children = (
-				FA069463230EA63700BAC336 /* protocol */,
-				FA069465230EA9BD00BAC336 /* view */,
+				FA069467230EA9FA00BAC336 /* hardware */,
+				FA069466230EA9E800BAC336 /* dark-sky */,
 			);
-			path = ui;
+			path = domains;
 			sourceTree = "<group>";
 		};
-		FA069462230EA62C00BAC336 /* api */ = {
+		FA069463230EA63700BAC336 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
-				FA069467230EA9FA00BAC336 /* device */,
-				FA069466230EA9E800BAC336 /* remote */,
+				FAB1F5412311BC5900E26CD6 /* model */,
+				FAB1F53E2311BB8C00E26CD6 /* ui */,
+				FAB1F53D2311BB8200E26CD6 /* api */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FA069464230EA64500BAC336 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1F53F2311BBBC00E26CD6 /* essentials */,
+				FAB1F5442311C0F700E26CD6 /* model */,
+				FAB1F5402311BBE500E26CD6 /* ui */,
+				FA069463230EA63700BAC336 /* protocols */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		FA069466230EA9E800BAC336 /* dark-sky */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1F53B2311B92700E26CD6 /* DarkSkyPredictionService.swift */,
+				FA069477230F054A00BAC336 /* DarkSkyPrediction.swift */,
+				FA069473230F03AA00BAC336 /* DarkSkyWeather.swift */,
+			);
+			path = "dark-sky";
+			sourceTree = "<group>";
+		};
+		FA069467230EA9FA00BAC336 /* hardware */ = {
+			isa = PBXGroup;
+			children = (
+				FA06946E230EB2BD00BAC336 /* HardwareLocationService.swift */,
+			);
+			path = hardware;
+			sourceTree = "<group>";
+		};
+		FAB1F53D2311BB8200E26CD6 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				FA06946A230EAFC900BAC336 /* WNLocationProvider.swift */,
+				FA06946C230EB01E00BAC336 /* WNPredictionProvider.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
 		};
-		FA069463230EA63700BAC336 /* protocol */ = {
+		FAB1F53E2311BB8C00E26CD6 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				FA069470230EE50900BAC336 /* WNVisuallyLockable.swift */,
 			);
-			path = protocol;
+			path = ui;
 			sourceTree = "<group>";
 		};
-		FA069464230EA64500BAC336 /* support */ = {
+		FAB1F53F2311BBBC00E26CD6 /* essentials */ = {
 			isa = PBXGroup;
 			children = (
 				FA069433230EA29F00BAC336 /* WNAppDelegate.swift */,
@@ -153,29 +219,58 @@
 				FA06943A230EA2A000BAC336 /* Assets.xcassets */,
 				FA06943C230EA2A000BAC336 /* LaunchScreen.storyboard */,
 			);
-			path = support;
+			path = essentials;
 			sourceTree = "<group>";
 		};
-		FA069465230EA9BD00BAC336 /* view */ = {
+		FAB1F5402311BBE500E26CD6 /* ui */ = {
 			isa = PBXGroup;
 			children = (
 				FA069468230EAC6F00BAC336 /* WNViewController.swift */,
 			);
-			path = view;
+			path = ui;
 			sourceTree = "<group>";
 		};
-		FA069466230EA9E800BAC336 /* remote */ = {
+		FAB1F5412311BC5900E26CD6 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				FA06947A230F081000BAC336 /* WNLocation.swift */,
+				FAB1F5472311C38900E26CD6 /* WNPrediction.swift */,
 			);
-			path = remote;
+			path = model;
 			sourceTree = "<group>";
 		};
-		FA069467230EA9FA00BAC336 /* device */ = {
+		FAB1F5442311C0F700E26CD6 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				FAB1F5452311C12C00E26CD6 /* WNPredictionModel.swift */,
 			);
-			path = device;
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAB1F5492311C69000E26CD6 /* conformance */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1F54A2311C6CC00E26CD6 /* location */,
+				FAB1F54B2311C6D400E26CD6 /* prediction */,
+			);
+			path = conformance;
+			sourceTree = "<group>";
+		};
+		FAB1F54A2311C6CC00E26CD6 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1F54C2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift */,
+				FAB1F5422311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		FAB1F54B2311C6D400E26CD6 /* prediction */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1F54E2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift */,
+			);
+			path = prediction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +404,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA069471230EE50900BAC336 /* WNVisuallyLockable.swift in Sources */,
+				FA069478230F054A00BAC336 /* DarkSkyPrediction.swift in Sources */,
+				FA06946F230EB2BD00BAC336 /* HardwareLocationService.swift in Sources */,
+				FAB1F54D2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift in Sources */,
+				FAB1F53C2311B92700E26CD6 /* DarkSkyPredictionService.swift in Sources */,
 				FA069434230EA29F00BAC336 /* WNAppDelegate.swift in Sources */,
+				FAB1F5462311C12C00E26CD6 /* WNPredictionModel.swift in Sources */,
+				FA069474230F03AA00BAC336 /* DarkSkyWeather.swift in Sources */,
+				FAB1F54F2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift in Sources */,
+				FA06946B230EAFC900BAC336 /* WNLocationProvider.swift in Sources */,
+				FA06946D230EB01E00BAC336 /* WNPredictionProvider.swift in Sources */,
 				FA069469230EAC6F00BAC336 /* WNViewController.swift in Sources */,
+				FA06947B230F081000BAC336 /* WNLocation.swift in Sources */,
+				FAB1F5482311C38900E26CD6 /* WNPrediction.swift in Sources */,
+				FAB1F5432311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +591,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72U4LHPYPZ;
-				INFOPLIST_FILE = "$(SRCROOT)/weather-now/support/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/weather-now/app/essentials/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -502,7 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72U4LHPYPZ;
-				INFOPLIST_FILE = "$(SRCROOT)/weather-now/support/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/weather-now/app/essentials/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
