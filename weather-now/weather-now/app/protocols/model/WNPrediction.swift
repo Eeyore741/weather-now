@@ -13,4 +13,5 @@ protocol WNPrediction {
     var longitude: Double { get }
     var timezone: String { get }
     var temperature: Double { get }
+    var date: Date { get }
 }
