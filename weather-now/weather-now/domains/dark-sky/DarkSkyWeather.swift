@@ -10,7 +10,7 @@ import Foundation
 
 struct DarkSkyWeather {
     
-    let time: Data
+    let time: Date
     let temperature: Double
 }
 

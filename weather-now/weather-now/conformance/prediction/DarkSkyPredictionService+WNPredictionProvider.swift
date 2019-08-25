@@ -10,13 +10,30 @@ import Foundation
 
 extension DarkSkyPredictionService: WNPredictionProvider{
     
+    private var decoder: JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .secondsSince1970
+        return decoder
+    }
+    
     func requestWeatherPredictionForLocation(_ location: WNLocation, withHandler handler: PredictionUpdateHandler) {
-        guard
-            let url = predictionRequestUrlWithLatitude(location.latitude, andLongitude: location.longitude)
-            else { fatalError("no request") }
-        let task = self.urlSession.dataTask(with: url) {
-            (data, response, error) in
+        self.requestPrediction(withLatitude: location.latitude,
+                               longitude: location.longitude) {
+                                data, response, error in
+                                if
+                                    let error = error{
+                                    return handler.failure(error)
+                                }
+                                guard
+                                    let data = data
+                                    else { return handler.failure(DarkSkyError.noData) }
+                                do{
+                                    let prediction = try self.decoder.decode(DarkSkyPrediction.self, from: data)
+                                    handler.success(prediction)
+                                }
+                                catch{
+                                    return handler.failure(error)
+                                }
         }
-        task.resume()
     }
 }
