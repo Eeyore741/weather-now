@@ -13,4 +13,8 @@ extension DarkSkyPrediction: WNPrediction{
     var temperature: Double {
         return self.currently.temperature
     }
+    
+    var date: Date {
+        return self.currently.time
+    }
 }
