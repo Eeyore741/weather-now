@@ -22,16 +22,24 @@ extension WNVisuallyLockable where Self: UIView{
     }
     
     func wnvl_lockWithMessage(_ message: String){
-        wnvl_unlock()
-        subviews.forEach {
+        self.unlock()
+        self.lockWithMessage(message)
+    }
+    
+    func wnvl_unlock(){
+        self.unlock()
+    }
+    
+    private func lockWithMessage(_ message: String){
+        self.subviews.forEach {
             $0.isUserInteractionEnabled = false
             $0.alpha = 0.1;
         }
         let indicator = UIActivityIndicatorView(style: .gray)
         indicator.translatesAutoresizingMaskIntoConstraints = false
-        indicator.center = convert(center, from: indicator)
-        indicator.tag = functionTag
-        addSubview(indicator)
+        indicator.center = self.convert(self.center, from: indicator)
+        indicator.tag = self.functionTag
+        self.addSubview(indicator)
         indicator.startAnimating()
         let messageLabel = UILabel(frame: self.bounds)
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -39,16 +47,16 @@ extension WNVisuallyLockable where Self: UIView{
         messageLabel.textAlignment = .center
         messageLabel.numberOfLines = 0
         messageLabel.text = message
-        messageLabel.center = convert(center, from: messageLabel).applying(CGAffineTransform(translationX: 0, y: indicator.frame.height * 2.5))
-        messageLabel.tag = functionTag
-        addSubview(messageLabel)
+        messageLabel.center = self.convert(self.center, from: messageLabel).applying(CGAffineTransform(translationX: 0, y: indicator.frame.height * 2.5))
+        messageLabel.tag = self.functionTag
+        self.addSubview(messageLabel)
     }
     
-    func wnvl_unlock(){
-        subviews.forEach {
+    private func unlock(){
+        self.subviews.forEach {
             $0.isUserInteractionEnabled = true
             $0.alpha = 1.0;
-            if $0.tag == functionTag { $0.removeFromSuperview() }
+            if $0.tag == self.functionTag { $0.removeFromSuperview() }
         }
     }
 }
