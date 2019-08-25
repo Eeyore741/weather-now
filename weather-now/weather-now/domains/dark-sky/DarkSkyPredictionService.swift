@@ -8,7 +8,18 @@
 
 import Foundation
 
-typealias ResponseHandler = (Data?, URLResponse?, Error?) -> Void
+typealias DarkSkyHandler = (Data?, URLResponse?, Error?) -> Void
+
+enum DarkSkyError: String{
+    case noData = "Response has no data"
+}
+
+extension DarkSkyError: LocalizedError{
+    
+    var errorDescription: String?{
+        return rawValue
+    }
+}
 
 class DarkSkyPredictionService{
     
@@ -30,7 +41,7 @@ class DarkSkyPredictionService{
         return components.url
     }
     
-    func requestPrediction(withLatitude latitude: Double, longitude: Double, andCompletionHandler handler: @escaping ResponseHandler){
+    func requestPrediction(withLatitude latitude: Double, longitude: Double, andCompletionHandler handler: @escaping DarkSkyHandler){
         guard
             let url = predictionRequestUrlWithLatitude(latitude, andLongitude: longitude)
             else { return }
