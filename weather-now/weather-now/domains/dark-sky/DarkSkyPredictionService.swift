@@ -8,7 +8,7 @@
 
 import Foundation
 
-//https://api.darksky.net/forecast/2bb07c3bece89caf533ac9a5d23d8417/59.337239,18.062381
+typealias ResponseHandler = (Data?, URLResponse?, Error?) -> Void
 
 class DarkSkyPredictionService{
     
@@ -22,11 +22,19 @@ class DarkSkyPredictionService{
         self.token = token
     }
     
-    func predictionRequestUrlWithLatitude(_ latitude: Double, andLongitude longitude: Double) -> URL?{
+    private func predictionRequestUrlWithLatitude(_ latitude: Double, andLongitude longitude: Double) -> URL?{
         guard
             var components = URLComponents(string: baseUrl)
             else { return nil }
         components.path = "/\(function)/\(token)/\(latitude),\(longitude)"
         return components.url
+    }
+    
+    func requestPrediction(withLatitude latitude: Double, longitude: Double, andCompletionHandler handler: @escaping ResponseHandler){
+        guard
+            let url = predictionRequestUrlWithLatitude(latitude, andLongitude: longitude)
+            else { return }
+        let task = urlSession.dataTask(with: url, completionHandler: handler)
+        task.resume()
     }
 }
