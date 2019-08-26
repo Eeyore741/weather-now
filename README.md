@@ -1,5 +1,5 @@
 # Weater Now
-Simple one view iOS app to display weather prediction depending on device geolocation 📞 and [Dark Sky](darksky.net) service api 🏙
+Simple one view iOS app to display weather prediction depending on device geolocation 🌍 and [Dark Sky](darksky.net) service api 🌤
 
 ## Requirements
 App was developerd on Xcode 10.3 and tested on iOS 12.4.  
@@ -7,11 +7,11 @@ Just open and run **weather-now.xcodeproj** file.
 
 ## Index
 
-- [Overview](##overview)
-- [Application](##application)
-- [Protocols](##protocols)
-- [Domains](##domains)
-- [Conformance](##conformance)
+- [Overview](#overview)
+- [Application](#application)
+- [Protocols](#protocols)
+- [Domains](#domains)
+- [Conformance](#conformance)
 
 ## Overview
 App contains of following sections.  
