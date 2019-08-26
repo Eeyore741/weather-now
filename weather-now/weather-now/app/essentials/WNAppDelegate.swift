@@ -25,7 +25,17 @@ class WNAppDelegate: UIResponder{
 extension WNAppDelegate: UIApplicationDelegate{
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let model = WNPredictionModel(locationProvider: HardwareLocationService(), predictionProvider: DarkSkyPredictionService(url: "https://api.darksky.net", token: "2bb07c3bece89caf533ac9a5d23d8417"))
+        guard
+            let weatherApiUrl = Bundle.main.object(forInfoDictionaryKey: "DARK_SKY_BASE_URL") as? String
+            else{ fatalError("Darks Sky api url required") }
+        guard
+            let weatherApiToken = Bundle.main.object(forInfoDictionaryKey: "DARK_SKY_API_TOKEN") as? String
+            else{ fatalError("Darks Sky api token required") }
+        let predictionService = DarkSkyPredictionService(url: "https://\(weatherApiUrl)",
+                                                          token: weatherApiToken)
+        let locationService = HardwareLocationService()
+        let model = WNPredictionModel(locationProvider: locationService,
+                                      predictionProvider: predictionService)
         let viewController = WNViewController(model)
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
