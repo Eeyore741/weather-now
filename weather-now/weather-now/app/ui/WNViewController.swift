@@ -67,9 +67,17 @@ class WNViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    override func viewDidLoad() {
+        setupUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        predictionModel.getWeatherPredictionWithHandler((onPredictionUpdateSuccess, onPredictionUpdateFailure))
+    }
+    
     private func setupUI(){
         view.backgroundColor = .white
-        view.translatesAutoresizingMaskIntoConstraints = false
+//        view.translatesAutoresizingMaskIntoConstraints = false
         let timezoneLabel = WNViewController.genericTitleLabel
         timezoneLabel.text = "Timezone"
         view.addSubview(timezoneLabel)
@@ -105,14 +113,6 @@ class WNViewController: UIViewController {
         view.addSubview(timeValue)
         timeValue.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 6.0).isActive = true
         timeValue.centerXAnchor.constraint(equalTo: timeLabel.centerXAnchor, constant: 0).isActive = true
-    }
-    
-    override func viewDidLoad() {
-        setupUI()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        predictionModel.getWeatherPredictionWithHandler((onPredictionUpdateSuccess, onPredictionUpdateFailure))
     }
     
     private func displayPrediction(_ prediction: WNPrediction){

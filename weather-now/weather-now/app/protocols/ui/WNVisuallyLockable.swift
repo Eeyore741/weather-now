@@ -40,13 +40,11 @@ extension WNVisuallyLockable where Self: UIView{
             $0.alpha = 0.1;
         }
         let indicator = UIActivityIndicatorView(style: .gray)
-        indicator.translatesAutoresizingMaskIntoConstraints = false
         indicator.center = self.convert(self.center, from: indicator)
         indicator.tag = self.functionTag
         self.addSubview(indicator)
         indicator.startAnimating()
         let messageLabel = UILabel(frame: self.bounds)
-        messageLabel.translatesAutoresizingMaskIntoConstraints = false
         messageLabel.textColor = .darkText
         messageLabel.textAlignment = .center
         messageLabel.numberOfLines = 0

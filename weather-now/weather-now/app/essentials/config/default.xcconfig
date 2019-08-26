@@ -6,5 +6,5 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
-DARK_SKY_BASE_URL = api.darksky.net1
+DARK_SKY_BASE_URL = api.darksky.net
 DARK_SKY_API_TOKEN = 2bb07c3bece89caf533ac9a5d23d8417
