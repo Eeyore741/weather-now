@@ -28,7 +28,7 @@
 		FAB1F54D2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F54C2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift */; };
 		FAB1F54F2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F54E2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift */; };
 		FAB1F55123130EDD00E26CD6 /* DarkSkyPrediction+WNPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F55023130EDD00E26CD6 /* DarkSkyPrediction+WNPrediction.swift */; };
-		FAB1F5542313454200E26CD6 /* dubug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FAB1F5532313454100E26CD6 /* dubug.xcconfig */; };
+		FAB1F5542313454200E26CD6 /* default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FAB1F5532313454100E26CD6 /* default.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +76,7 @@
 		FAB1F54C2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HardwareLocationService+WNLocationProvider.swift"; sourceTree = "<group>"; };
 		FAB1F54E2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DarkSkyPredictionService+WNPredictionProvider.swift"; sourceTree = "<group>"; };
 		FAB1F55023130EDD00E26CD6 /* DarkSkyPrediction+WNPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DarkSkyPrediction+WNPrediction.swift"; sourceTree = "<group>"; };
-		FAB1F5532313454100E26CD6 /* dubug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = dubug.xcconfig; sourceTree = "<group>"; };
+		FAB1F5532313454100E26CD6 /* default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = default.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,7 +293,7 @@
 		FAB1F5522313451D00E26CD6 /* config */ = {
 			isa = PBXGroup;
 			children = (
-				FAB1F5532313454100E26CD6 /* dubug.xcconfig */,
+				FAB1F5532313454100E26CD6 /* default.xcconfig */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -405,7 +405,7 @@
 			files = (
 				FA06943E230EA2A000BAC336 /* LaunchScreen.storyboard in Resources */,
 				FAA73AD72313FD48003FA07C /* icon in Resources */,
-				FAB1F5542313454200E26CD6 /* dubug.xcconfig in Resources */,
+				FAB1F5542313454200E26CD6 /* default.xcconfig in Resources */,
 				FA06943B230EA2A000BAC336 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +495,7 @@
 /* Begin XCBuildConfiguration section */
 		FA069456230EA2A000BAC336 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB1F5532313454100E26CD6 /* default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -558,6 +559,7 @@
 		};
 		FA069457230EA2A000BAC336 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB1F5532313454100E26CD6 /* default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -743,7 +745,7 @@
 				FA069457230EA2A000BAC336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FA069458230EA2A000BAC336 /* Build configuration list for PBXNativeTarget "weather-now" */ = {
 			isa = XCConfigurationList;
@@ -752,7 +754,7 @@
 				FA06945A230EA2A000BAC336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FA06945B230EA2A000BAC336 /* Build configuration list for PBXNativeTarget "weather-nowTests" */ = {
 			isa = XCConfigurationList;
@@ -761,7 +763,7 @@
 				FA06945D230EA2A000BAC336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		FA06945E230EA2A000BAC336 /* Build configuration list for PBXNativeTarget "weather-nowUITests" */ = {
 			isa = XCConfigurationList;
@@ -770,7 +772,7 @@
 				FA069460230EA2A000BAC336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

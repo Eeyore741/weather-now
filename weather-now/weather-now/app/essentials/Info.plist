@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>DARK_SKY_BASE_URL</key>
+	<string>$(DARK_SKY_BASE_URL)</string>
+	<key>DARK_SKY_API_TOKEN</key>
+	<string>$(DARK_SKY_API_TOKEN)</string>
 	<key>CFBundleDisplayName</key>
 	<string>Weather Now</string>
 	<key>CFBundleExecutable</key>
