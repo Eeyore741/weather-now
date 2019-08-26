@@ -20,12 +20,15 @@
 		FA069474230F03AA00BAC336 /* DarkSkyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069473230F03AA00BAC336 /* DarkSkyWeather.swift */; };
 		FA069478230F054A00BAC336 /* DarkSkyPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069477230F054A00BAC336 /* DarkSkyPrediction.swift */; };
 		FA06947B230F081000BAC336 /* WNLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06947A230F081000BAC336 /* WNLocation.swift */; };
+		FAA73AD72313FD48003FA07C /* icon in Resources */ = {isa = PBXBuildFile; fileRef = FAA73AD62313FD47003FA07C /* icon */; };
 		FAB1F53C2311B92700E26CD6 /* DarkSkyPredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F53B2311B92700E26CD6 /* DarkSkyPredictionService.swift */; };
 		FAB1F5432311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F5422311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift */; };
 		FAB1F5462311C12C00E26CD6 /* WNPredictionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F5452311C12C00E26CD6 /* WNPredictionModel.swift */; };
 		FAB1F5482311C38900E26CD6 /* WNPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F5472311C38900E26CD6 /* WNPrediction.swift */; };
 		FAB1F54D2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F54C2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift */; };
 		FAB1F54F2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F54E2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift */; };
+		FAB1F55123130EDD00E26CD6 /* DarkSkyPrediction+WNPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F55023130EDD00E26CD6 /* DarkSkyPrediction+WNPrediction.swift */; };
+		FAB1F5542313454200E26CD6 /* dubug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FAB1F5532313454100E26CD6 /* dubug.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +68,15 @@
 		FA069473230F03AA00BAC336 /* DarkSkyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyWeather.swift; sourceTree = "<group>"; };
 		FA069477230F054A00BAC336 /* DarkSkyPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyPrediction.swift; sourceTree = "<group>"; };
 		FA06947A230F081000BAC336 /* WNLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNLocation.swift; sourceTree = "<group>"; };
+		FAA73AD62313FD47003FA07C /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
 		FAB1F53B2311B92700E26CD6 /* DarkSkyPredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyPredictionService.swift; sourceTree = "<group>"; };
 		FAB1F5422311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+WNLocation.swift"; sourceTree = "<group>"; };
 		FAB1F5452311C12C00E26CD6 /* WNPredictionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNPredictionModel.swift; sourceTree = "<group>"; };
 		FAB1F5472311C38900E26CD6 /* WNPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNPrediction.swift; sourceTree = "<group>"; };
 		FAB1F54C2311C9ED00E26CD6 /* HardwareLocationService+WNLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HardwareLocationService+WNLocationProvider.swift"; sourceTree = "<group>"; };
 		FAB1F54E2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DarkSkyPredictionService+WNPredictionProvider.swift"; sourceTree = "<group>"; };
+		FAB1F55023130EDD00E26CD6 /* DarkSkyPrediction+WNPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DarkSkyPrediction+WNPrediction.swift"; sourceTree = "<group>"; };
+		FAB1F5532313454100E26CD6 /* dubug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = dubug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,14 @@
 			path = hardware;
 			sourceTree = "<group>";
 		};
+		FAA73AD52313FC87003FA07C /* res */ = {
+			isa = PBXGroup;
+			children = (
+				FAA73AD62313FD47003FA07C /* icon */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
 		FAB1F53D2311BB8200E26CD6 /* api */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +228,8 @@
 		FAB1F53F2311BBBC00E26CD6 /* essentials */ = {
 			isa = PBXGroup;
 			children = (
+				FAA73AD52313FC87003FA07C /* res */,
+				FAB1F5522313451D00E26CD6 /* config */,
 				FA069433230EA29F00BAC336 /* WNAppDelegate.swift */,
 				FA06943F230EA2A000BAC336 /* Info.plist */,
 				FA06943A230EA2A000BAC336 /* Assets.xcassets */,
@@ -269,8 +285,17 @@
 			isa = PBXGroup;
 			children = (
 				FAB1F54E2311CA4C00E26CD6 /* DarkSkyPredictionService+WNPredictionProvider.swift */,
+				FAB1F55023130EDD00E26CD6 /* DarkSkyPrediction+WNPrediction.swift */,
 			);
 			path = prediction;
+			sourceTree = "<group>";
+		};
+		FAB1F5522313451D00E26CD6 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1F5532313454100E26CD6 /* dubug.xcconfig */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +404,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA06943E230EA2A000BAC336 /* LaunchScreen.storyboard in Resources */,
+				FAA73AD72313FD48003FA07C /* icon in Resources */,
+				FAB1F5542313454200E26CD6 /* dubug.xcconfig in Resources */,
 				FA06943B230EA2A000BAC336 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +443,7 @@
 				FA06946B230EAFC900BAC336 /* WNLocationProvider.swift in Sources */,
 				FA06946D230EB01E00BAC336 /* WNPredictionProvider.swift in Sources */,
 				FA069469230EAC6F00BAC336 /* WNViewController.swift in Sources */,
+				FAB1F55123130EDD00E26CD6 /* DarkSkyPrediction+WNPrediction.swift in Sources */,
 				FA06947B230F081000BAC336 /* WNLocation.swift in Sources */,
 				FAB1F5482311C38900E26CD6 /* WNPrediction.swift in Sources */,
 				FAB1F5432311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift in Sources */,
