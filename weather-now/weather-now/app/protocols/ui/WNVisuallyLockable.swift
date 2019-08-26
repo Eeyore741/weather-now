@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `WNVisuallyLockable` is the protocol with UIView extension providing simple realisation of view locking with message display
+ */
+
 import Foundation
 import UIKit.UIView
 

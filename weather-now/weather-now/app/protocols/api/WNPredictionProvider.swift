@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `WNPredictionProvider` is the app specific protocol providing weather prediction
+ */
+
 import Foundation
 
 typealias PredictionUpdateHandler = (success: (WNPrediction) -> Void, failure: (Error) -> Void)

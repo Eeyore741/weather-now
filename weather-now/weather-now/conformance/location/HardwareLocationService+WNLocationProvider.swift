@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ File provides domain specific HardwareLocationService type conformance to app specific WNLocationProvider protocol
+ */
+
 import Foundation
 import CoreLocation
 

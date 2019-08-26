@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `WNPrediction` protocol is the app specific interface representing weather prediction
+ */
+
 import Foundation
 
 protocol WNPrediction {

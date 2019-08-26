@@ -6,6 +6,12 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `WNPredictionModel` is the application main model class.
+ Model supported by additional WNLocation & WNPrediction protocols
+ Data provided by two required types conforming WNLocationProvider & WNPredictionProvider protocols.
+ */
+
 import Foundation
 
 class WNPredictionModel {

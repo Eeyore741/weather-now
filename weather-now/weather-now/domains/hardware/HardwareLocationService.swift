@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `HardwareLocationService` provides device geolocation utilizing CoreLocation framework
+ */
+
 import Foundation
 import CoreLocation
 

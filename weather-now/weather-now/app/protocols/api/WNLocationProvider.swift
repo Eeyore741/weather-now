@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `WNLocationProvider` is the app specific protocol providing location information
+ */
+
 import Foundation
 
 typealias LocationUpdateHandler = (success: (WNLocation) -> Void, failure: (Error) -> Void)

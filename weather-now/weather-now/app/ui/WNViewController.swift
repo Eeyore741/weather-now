@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `WNViewController` logicless view controller (View) with model class (WNPredictionModel) required on init stage
+ */
+
 import Foundation
 import UIKit.UIViewController
 
@@ -111,7 +115,7 @@ class WNViewController: UIViewController {
         predictionModel.getWeatherPredictionWithHandler((onPredictionUpdateSuccess, onPredictionUpdateFailure))
     }
     
-    func displayPrediction(_ prediction: WNPrediction){
+    private func displayPrediction(_ prediction: WNPrediction){
         self.timezoneValue.text = prediction.timezone
         self.coordinatesValue.text = "Latitude: \(prediction.latitude)\nLongitude: \(prediction.longitude)"
         self.temperatureValue.text = "\(prediction.temperature)\u{00B0}"

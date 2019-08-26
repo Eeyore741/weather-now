@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ File provides domain specific DarkSkyPredictionService type conformance to app specific WNPredictionProvider protocol
+ */
+
 import Foundation
 
 extension DarkSkyPredictionService: WNPredictionProvider{

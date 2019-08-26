@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `DarkSkyPrediction` represents prediction from darksky.net domain
+ */
+
 import Foundation
 
 struct DarkSkyPrediction {

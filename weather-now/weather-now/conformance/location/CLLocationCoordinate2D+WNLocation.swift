@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ File provides domain specific CLLocationCoordinate2D type conformance to app specific WNLocation protocol
+ */
+
 import Foundation
 import CoreLocation
 

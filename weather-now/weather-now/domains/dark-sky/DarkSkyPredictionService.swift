@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `DarkSkyPredictionService` handles requesting weather prediction utilizing darksky.net api
+ */
+
 import Foundation
 
 typealias DarkSkyHandler = (Data?, URLResponse?, Error?) -> Void

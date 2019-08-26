@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `WNAppDelegate` is the main entrance point for the app conforming UIApplicationDelegate protocol
+ */
+
 import UIKit
 
 @UIApplicationMain

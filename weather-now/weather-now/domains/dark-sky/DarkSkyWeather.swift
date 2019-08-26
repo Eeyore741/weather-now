@@ -6,6 +6,10 @@
 //  Copyright © 2019 Vitalii Kuznetsov. All rights reserved.
 //
 
+/**
+ `DarkSkyWeather` represents weather from darksky.net domain
+*/
+
 import Foundation
 
 struct DarkSkyWeather {
