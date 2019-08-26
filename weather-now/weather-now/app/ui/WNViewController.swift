@@ -34,6 +34,15 @@ class WNViewController: UIViewController {
         label.textAlignment = .center
         return label
     }
+    private class var genericInfoLabel: UILabel {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor.darkGray
+        label.font = UIFont.systemFont(ofSize: 14.0)
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        return label
+    }
     private class var dateFormatter: DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "H:mm:ss\nyyyy/MM/dd"
@@ -113,6 +122,12 @@ class WNViewController: UIViewController {
         view.addSubview(timeValue)
         timeValue.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 6.0).isActive = true
         timeValue.centerXAnchor.constraint(equalTo: timeLabel.centerXAnchor, constant: 0).isActive = true
+        
+        let infoLabel = WNViewController.genericInfoLabel
+        infoLabel.text = "by Vitalii Kuznetsov"
+        view.addSubview(infoLabel)
+        infoLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16.0).isActive = true
+        infoLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
     }
     
     private func displayPrediction(_ prediction: WNPrediction){
