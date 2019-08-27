@@ -14,11 +14,14 @@ Just open and run **weather-now.xcodeproj** file.
 - [Conformance](#conformance)
 
 ## Overview
-App contains of following sections.  
+Project contains following sections.  
 - **Application** section fullfills iOS app requirements.  
 - **Protocols** section fullfills **Application** types requirements on required services and data.  
 - **Domains** section implements functionality for specific domains like CoreLocation framework and  [Dark Sky](darksky.net).  
-- **Conformance** section extends **Domains** to conform to **Protocols** equired by the **Application**.  
+- **Conformance** section extends **Domains** to conform to **Protocols** equired by the **Application**.
+
+Application UI implemented without involving of Interface Builder (no Storyboards & Nib files).
+Applicatione code does not rely on 3rd party libraries or frameworks.
 
 ## Application
 Application contains of the following files to provide functionality
