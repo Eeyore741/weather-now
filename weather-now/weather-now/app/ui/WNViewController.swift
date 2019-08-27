@@ -86,7 +86,6 @@ class WNViewController: UIViewController {
     
     private func setupUI(){
         view.backgroundColor = .white
-//        view.translatesAutoresizingMaskIntoConstraints = false
         let timezoneLabel = WNViewController.genericTitleLabel
         timezoneLabel.text = "Timezone"
         view.addSubview(timezoneLabel)
