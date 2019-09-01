@@ -30,7 +30,7 @@ extension DarkSkyPredictionService: WNPredictionProvider{
                                 }
                                 guard
                                     let data = data
-                                    else { return handler.failure(DarkSkyError.noData) }
+                                    else { return handler.failure(DarkSkyPredictionService.Error.noData) }
                                 do{
                                     let prediction = try self.decoder.decode(DarkSkyPrediction.self, from: data)
                                     handler.success(prediction)
