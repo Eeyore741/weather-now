@@ -14,18 +14,17 @@ import Foundation
 
 typealias DarkSkyHandler = (Data?, URLResponse?, Error?) -> Void
 
-enum DarkSkyError: String{
-    case noData = "Response has no data"
-}
-
-extension DarkSkyError: LocalizedError{
-    
-    var errorDescription: String?{
-        return rawValue
-    }
-}
 
 class DarkSkyPredictionService{
+    
+    enum Error: String, LocalizedError{
+        
+        case noData = "Response has no data"
+        
+        var errorDescription: String?{
+            return rawValue
+        }
+    }
     
     private let token: String
     private let baseUrl: String
