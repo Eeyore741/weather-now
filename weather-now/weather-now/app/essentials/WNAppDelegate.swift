@@ -31,8 +31,7 @@ extension WNAppDelegate: UIApplicationDelegate{
         guard
             let weatherApiToken = Bundle.main.object(forInfoDictionaryKey: "DARK_SKY_API_TOKEN") as? String
             else{ fatalError("Darks Sky api token required") }
-        let predictionService = DarkSkyPredictionService(url: "https://\(weatherApiUrl)",
-                                                          token: weatherApiToken)
+        let predictionService = DarkSkyPredictionService(url: "https://\(weatherApiUrl)", token: weatherApiToken)
         let locationService = HardwareLocationService()
         let model = WNPredictionModel(locationProvider: locationService,
                                       predictionProvider: predictionService)

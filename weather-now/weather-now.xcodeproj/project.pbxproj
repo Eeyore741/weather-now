@@ -10,7 +10,6 @@
 		FA069434230EA29F00BAC336 /* WNAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069433230EA29F00BAC336 /* WNAppDelegate.swift */; };
 		FA06943B230EA2A000BAC336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA06943A230EA2A000BAC336 /* Assets.xcassets */; };
 		FA06943E230EA2A000BAC336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA06943C230EA2A000BAC336 /* LaunchScreen.storyboard */; };
-		FA069449230EA2A000BAC336 /* weather_nowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069448230EA2A000BAC336 /* weather_nowTests.swift */; };
 		FA069454230EA2A000BAC336 /* weather_nowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069453230EA2A000BAC336 /* weather_nowUITests.swift */; };
 		FA069469230EAC6F00BAC336 /* WNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069468230EAC6F00BAC336 /* WNViewController.swift */; };
 		FA06946B230EAFC900BAC336 /* WNLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06946A230EAFC900BAC336 /* WNLocationProvider.swift */; };
@@ -20,6 +19,9 @@
 		FA069474230F03AA00BAC336 /* DarkSkyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069473230F03AA00BAC336 /* DarkSkyWeather.swift */; };
 		FA069478230F054A00BAC336 /* DarkSkyPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA069477230F054A00BAC336 /* DarkSkyPrediction.swift */; };
 		FA06947B230F081000BAC336 /* WNLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06947A230F081000BAC336 /* WNLocation.swift */; };
+		FA21B189231C3DA600DEFB09 /* HardwareLocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21B188231C3DA600DEFB09 /* HardwareLocationServiceTests.swift */; };
+		FA21B18B231C414D00DEFB09 /* DarkSkyPredictionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21B18A231C414D00DEFB09 /* DarkSkyPredictionServiceTests.swift */; };
+		FA21B18D231C41E200DEFB09 /* ApplicationDependenciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21B18C231C41E200DEFB09 /* ApplicationDependenciesTests.swift */; };
 		FAA73AD72313FD48003FA07C /* icon in Resources */ = {isa = PBXBuildFile; fileRef = FAA73AD62313FD47003FA07C /* icon */; };
 		FAB1F53C2311B92700E26CD6 /* DarkSkyPredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F53B2311B92700E26CD6 /* DarkSkyPredictionService.swift */; };
 		FAB1F5432311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F5422311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift */; };
@@ -55,7 +57,6 @@
 		FA06943D230EA2A000BAC336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA06943F230EA2A000BAC336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA069444230EA2A000BAC336 /* weather-nowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weather-nowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA069448230EA2A000BAC336 /* weather_nowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_nowTests.swift; sourceTree = "<group>"; };
 		FA06944A230EA2A000BAC336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA06944F230EA2A000BAC336 /* weather-nowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weather-nowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA069453230EA2A000BAC336 /* weather_nowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_nowUITests.swift; sourceTree = "<group>"; };
@@ -68,6 +69,9 @@
 		FA069473230F03AA00BAC336 /* DarkSkyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyWeather.swift; sourceTree = "<group>"; };
 		FA069477230F054A00BAC336 /* DarkSkyPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyPrediction.swift; sourceTree = "<group>"; };
 		FA06947A230F081000BAC336 /* WNLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNLocation.swift; sourceTree = "<group>"; };
+		FA21B188231C3DA600DEFB09 /* HardwareLocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareLocationServiceTests.swift; sourceTree = "<group>"; };
+		FA21B18A231C414D00DEFB09 /* DarkSkyPredictionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyPredictionServiceTests.swift; sourceTree = "<group>"; };
+		FA21B18C231C41E200DEFB09 /* ApplicationDependenciesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDependenciesTests.swift; sourceTree = "<group>"; };
 		FAA73AD62313FD47003FA07C /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
 		FAB1F53B2311B92700E26CD6 /* DarkSkyPredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyPredictionService.swift; sourceTree = "<group>"; };
 		FAB1F5422311BDB300E26CD6 /* CLLocationCoordinate2D+WNLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+WNLocation.swift"; sourceTree = "<group>"; };
@@ -137,8 +141,10 @@
 		FA069447230EA2A000BAC336 /* weather-nowTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA069448230EA2A000BAC336 /* weather_nowTests.swift */,
+				FA21B18C231C41E200DEFB09 /* ApplicationDependenciesTests.swift */,
+				FA21B188231C3DA600DEFB09 /* HardwareLocationServiceTests.swift */,
 				FA06944A230EA2A000BAC336 /* Info.plist */,
+				FA21B18A231C414D00DEFB09 /* DarkSkyPredictionServiceTests.swift */,
 			);
 			path = "weather-nowTests";
 			sourceTree = "<group>";
@@ -454,7 +460,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA069449230EA2A000BAC336 /* weather_nowTests.swift in Sources */,
+				FA21B189231C3DA600DEFB09 /* HardwareLocationServiceTests.swift in Sources */,
+				FA21B18B231C414D00DEFB09 /* DarkSkyPredictionServiceTests.swift in Sources */,
+				FA21B18D231C41E200DEFB09 /* ApplicationDependenciesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
