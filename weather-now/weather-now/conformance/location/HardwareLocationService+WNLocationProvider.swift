@@ -21,12 +21,12 @@ extension HardwareLocationService: WNLocationProvider{
         case .notDetermined:
             coreLocationManager.requestWhenInUseAuthorization();
         case .denied, .restricted:
-            locationUpdateHandler?.failure(LocationAccessStatus.unavailable)
+            locationUpdateHandler?.failure(HardwareLocationService.Status.unavailable)
         default:
             guard
                 CLLocationManager.authorizationStatus() == .authorizedWhenInUse
                 else{
-                    return handler.failure(LocationAccessStatus.unavailable)
+                    return handler.failure(HardwareLocationService.Status.unavailable)
             }
             coreLocationManager.requestLocation()
             coreLocationManager.startMonitoringSignificantLocationChanges()

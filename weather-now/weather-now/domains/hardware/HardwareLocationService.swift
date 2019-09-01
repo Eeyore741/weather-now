@@ -13,19 +13,17 @@
 import Foundation
 import CoreLocation
 
-enum LocationAccessStatus: String{
-    case unavailable = "Device location api is not available"
-    case available = "Device location is available"
-}
-
-extension LocationAccessStatus: LocalizedError{
-    
-    var errorDescription: String?{
-        return rawValue
-    }
-}
-
 class HardwareLocationService: NSObject{
+    
+    enum Status: String, LocalizedError{
+        
+        case unavailable = "Device location api is not available"
+        case available = "Device location is available"
+        
+        var errorDescription: String?{
+            return rawValue
+        }
+    }
     
     let coreLocationManager: CLLocationManager
     var locationUpdateHandler: LocationUpdateHandler?
